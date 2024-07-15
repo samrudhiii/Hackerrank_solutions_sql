@@ -1,1 +1,57 @@
 # Hackerrank_solutions_sql
+1.Revising the Select Query I
+
+SELECT *
+FROM CITY
+WHERE POPULATION > 100000
+AND COUNTRYCODE IN 'USA';
+
+2.Revising the Select Query II
+
+SELECT NAME 
+FROM CITY
+WHERE POPULATION > 120000
+AND COUNTRYCODE IN 'USA';
+
+3.Select All
+
+SELECT *
+FROM CITY;
+
+4.Select By ID
+
+SELECT *
+FROM CITY
+WHERE ID IN '1661';
+
+5.Japanese Cities' Attributes
+
+SELECT *
+FROM CITY
+WHERE COUNTRYCODE IN 'JPN';
+
+6.Weather Observation Station 1
+
+SELECT CITY,STATE
+FROM STATION;
+
+7.Weather Observation Station 3
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE MOD(ID,2)=0;
+
+8.Weather Observation Station 4
+
+SELECT COUNT(CITY)-COUNT(DISTINCT CITY) AS DIFF
+FROM STATION;
+
+9.Weather Observation Station 7
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY LIKE '%a'
+OR CITY LIKE '%e'
+OR CITY LIKE '%i'
+OR CITY LIKE '%o'
+OR CITY LIKE '%u';
